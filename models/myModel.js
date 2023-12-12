@@ -1,13 +1,23 @@
-const mongoose = require('../db');
+const mongoose = require('mongoose');  // Usa '../../db' para retroceder dos niveles en la estructura de carpetas
 
 
-const modelo= new mongoose.Schema({
-    campo1: String,
-    campo2: Number,
+const modelo = new mongoose.Schema({
+  Titulo: {
+    type: String,
+    require: true
+  },
+  Fecha: {
+    type: Number,
+    require: true
+  },
+  Descripcion: {
+    type: String,
+    require: true
+  },
 });
 
 
-const myModel = mongoose.model('myModel', modelo);
+const notas = mongoose.model('myModel', modelo);
 
 
-module.exports = myModel;
+module.exports = notas;

@@ -19,7 +19,6 @@
             <div class="card-body">
               <h5 class="card-title">Tus notas</h5>
               <p class="card-text">no hay notas.</p>
-             
 <!-- Button trigger modal -->
 <button type="button" class=" btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   +
@@ -32,6 +31,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <input class="modal-title fs-5" id="exampleModalLabel" type="text"  placeholder="Titulo">
+        <input class="modal-title fs-5" id="exampleModalLabel" type="number"  placeholder="Fecha">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -39,7 +39,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-primary" onclick="guardar()" >Guardar</button>
       </div>
     </div>
   </div>
